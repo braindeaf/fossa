@@ -4,7 +4,7 @@ class CreateFossaLog < ActiveRecord::Migration[5.0]
       t.integer :ip
       t.string :path
       t.string :user_agent
-      t.string :referrer
+      t.string :referer
       t.timestamp :created_at
     end
   end
