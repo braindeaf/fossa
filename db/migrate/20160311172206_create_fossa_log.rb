@@ -1,4 +1,5 @@
-class CreateFossaLog < ActiveRecord::Migration[5.0]
+klass = ActiveRecord::Migration.respond_to?(:[]) ? ActiveRecord::Migration[5.0] : ActiveRecord::Migration
+class CreateFossaLog < klass
   def change
     create_table :fossa_logs do |t|
       t.integer :ip

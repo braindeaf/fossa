@@ -1,4 +1,5 @@
-class CreateFossaIpRanges < ActiveRecord::Migration[5.0]
+klass = ActiveRecord::Migration.respond_to?(:[]) ? ActiveRecord::Migration[5.0] : ActiveRecord::Migration
+class CreateFossaIpRanges < klass
   def change
     create_table :fossa_ip_ranges do |t|
       t.integer :start_ip, limit: 8
