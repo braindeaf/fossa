@@ -2,7 +2,7 @@ klass = ActiveRecord::Migration.respond_to?(:[]) ? ActiveRecord::Migration[5.0] 
 class CreateFossaLog < klass
   def change
     create_table :fossa_logs do |t|
-      t.integer :ip
+      t.integer :ip, limit: 8
       t.string :path
       t.string :user_agent
       t.string :referer
