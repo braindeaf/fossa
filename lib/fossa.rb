@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require 'fossa/version'
 require 'fossa/engine'
 require 'fossa/ip_encoder'

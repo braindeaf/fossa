@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 klass = ActiveRecord::Migration.respond_to?(:[]) ? ActiveRecord::Migration[5.0] : ActiveRecord::Migration
 class CreateFossaIpRanges < klass
   def change
